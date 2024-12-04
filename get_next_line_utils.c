@@ -6,7 +6,7 @@
 /*   By: kclaudan <kclaudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 16:25:19 by kclaudan          #+#    #+#             */
-/*   Updated: 2024/11/27 16:01:14 by kclaudan         ###   ########.fr       */
+/*   Updated: 2024/12/04 12:32:45 by kclaudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -81,12 +80,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*tab;
-	int		i;
-	int		k;
+	char *tab;
+	int i;
+	int k;
 
-	if (!s1 || !s2)
-		return (NULL);
 	tab = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
 	if (tab == NULL)
 		return (NULL);
