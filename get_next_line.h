@@ -24,11 +24,13 @@
 
 int		ft_strlen(const char *str);
 char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *s);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t elementCount, size_t elementSize);
 char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_clear_stash(char *stash, int _end_point);
-char	*ft_fill_line(char *stash, int nb_read);
+char	*read_file(int fd, char *res);
 char	*get_next_line(int fd);
+char	*ft_line(char *buffer);
+char	*ft_next(char *buffer);
+char	*ft_free(char *buffer, char *buf);
 
 #endif
